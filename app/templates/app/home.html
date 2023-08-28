@@ -1,0 +1,237 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/banner/Banner_1.jpg' %}" class="d-block w-100" alt="Banner Image" height="500" 
+                width="150">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/banner/Banner_3.jpg' %}" class="d-block w-100" alt="Banner Image" height="500" 
+                width="150">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/banner/Banner_4.jpg' %}" class="d-block w-100" alt="Banner Image" height="500" 
+                width="150">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+{% endblock banner-slider %}
+
+{% block information %}
+<div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>About Us</h1>
+        <Small class="fs-5">The Dabba Service is an online delivery site that offers healthy, homemade 
+            meals to students, office-goers, and busy individuals who are always on the go. The meals 
+            are prepared by talented and skilled home-based women who specialize in cooking healthy, 
+            tasty food.
+
+        </Small>
+    </div>
+</div>
+{% endblock information %}
+
+{% block main-content %}
+    <div class="container"><br>
+        <h2>Welcome to Dabba Service....</h2>
+        <br><br>
+        <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+            data-wow-duration="1s" data-wow-delay="0.6s"
+            style="animation-duration: 1s; animation-delay: 0.6s;
+            animation-name: none;">
+                <div class="food Service Kitchen1">
+                    <a href="{% url 'category' 'TF' %}">
+                        <div class="goodnessseccont text-center">
+                           <img src="{% static 'images/product/Product1.png' %}" class="img-
+                           responsive" alt="Kitchen Image" height="250" width="325" >
+                           <p style="font-family: 'Concert One', cursive; color:black;"><u>Traditional Food</u></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+            data-wow-duration="1s" data-wow-delay="0.6s"
+            style="animation-duration: 1s; animation-delay: 0.6s;
+            animation-name: none;">
+                <div class="food Service Kitchen2">
+                    <a href="{% url 'category' 'SF' %}">
+                        <div class="goodnessseccont text-center">
+                           <img src="{% static 'images/product/Product2.png' %}" class="img-
+                           responsive" alt="Kitchen Image" height="250" width="325">
+                           <p style="font-family: 'Concert One', cursive; color:black;"><u>South-Indian Food</u></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+            data-wow-duration="1s" data-wow-delay="0.6s"
+            style="animation-duration: 1s; animation-delay: 0.6s;
+            animation-name: none;">
+                <div class="food Service Kitchen3">
+                    <a href="{% url 'category' 'HK' %}">
+                        <div class="goodnessseccont text-center">
+                           <img src="{% static 'images/product/Product3.png' %}" class="img-
+                           responsive" alt="Kitchen Image" height="250" width="325">
+                           <p style="font-family: 'Concert One', cursive; color:black;"> <u>Home Kitchen</u></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row container"> 
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+            data-wow-duration="1s" data-wow-delay="0.6s"
+            style="animation-duration: 1s; animation-delay: 0.6s;
+            animation-name: none;">
+                <div class="food Service Kitchen4">
+                    <a href="{% url 'category' 'FF' %}">
+                        <div class="goodnessseccont text-center">
+                           <img src="{% static 'images/product/Product4.png' %}" class="img-
+                           responsive" alt="Kitchen Image" height="350" width="325">
+                           <p style="font-family: 'Concert One', cursive; color:black;"><u>Famous Food</u></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+            data-wow-duration="1s" data-wow-delay="0.6s"
+            style="animation-duration: 1s; animation-delay: 0.6s;
+            animation-name: none;">
+                <div class="food Service Kitchen5">
+                    <a href="{% url 'category' 'MK' %}">
+                        <div class="goodnessseccont text-center">
+                           <img src="{% static 'images/product/Product5.jpg' %}" class="img-
+                           responsive" alt="Kitchen Image" height="350" width="325">
+                           <p style="font-family: 'Concert One', cursive; color:black;"><u>Mummy Kitchen</u></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+            data-wow-duration="1s" data-wow-delay="0.6s"
+            style="animation-duration: 1s; animation-delay: 0.6s;
+            animation-name: none;">
+                <div class="food Service Kitchen6">
+                    <a href="{% url 'category' 'HW' %}">
+                        <div class="goodnessseccont text-center">
+                           <img src="{% static 'images/product/Product6.jpg' %}" class="img-
+                           responsive" alt="Kitchen Image" height="350" width="325">
+                           <p style="font-family: 'Concert One', cursive; color:black;"><u>Health is Wealth</u></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br/><br/>
+   
+{% endblock main-content %}
+
+{% block Help-&-Support %}
+<div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+
+        <h1>Help & Support</h1>        
+        <Small class="fs-5">
+            The Dabba Service company offers bands to provide help and support for the delivery of 
+            food. With their reliable service, you can be assured that your meals will arrive safely 
+            and on time, without any concerns about packaging and transportation.<br>&nbsp;<br>
+            Contact us easily through our website or email for any questions or support you need. Our 
+             dedicated customer service team is always available to provide assistance and address any 
+            concerns.
+        </Small>
+    </div>
+</div>
+
+{% endblock Help-&-Support %}
+
+{% block contact-with-us %}
+<div class="container">
+    <div class="row text-center p-5 text-success border-bottom shadow">
+
+        <h1>Contact with Us</h1>        
+        <Small class="fs-5">
+            techravisharma025@gmail.com<br>
+            6306136066
+        </Small>
+    </div>
+</div>
+
+<br><br>
+{% endblock contact-with-us %}
+
+
+{% block Connect %}
+<div class="container">
+    <div class="row justify-content-around p-5 text-center text-black border-bottom ">
+        <div class="col-4">
+            <h4><b>OPENING HOURS</b></h4><br>
+            <h6>
+                <b>Monday to Friday</b> 09:00 to 21:00<br><br>
+                <b>Saturday</b>    10:00 to 18:00<br><br>
+                <b>Sunday Closed!</b>
+            </h6>
+           </div>
+        <div class="col-4" bold>
+          <h4><b>HELPFUL LINKS</b></h4>
+          <h6>
+            <br>
+            <a class="link-dark link-offset-3-hover link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover" href="{% url 'privacy' %}">
+                PRIVACY POLICY
+            </a>
+            <br><br>
+            <a class="link-dark link-offset-3-hover link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover" href="{% url 'refund' %}">
+                REFUND & CANCELLATION POLICY
+            </a>
+            <br><br>
+            <a class="link-dark link-offset-3-hover link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover" href="{% url 'term' %}">
+                TERMS & CONDITIONS
+            </a>
+            <br><br>
+        </h6>
+        </div>
+        <div class="col-4">
+         <h4><b>GET IN TOUCH</b></h4>
+          <h6>
+            <br>
+            <a class="link-dark link-offset-3-hover link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover" href="https://www.linkedin.com/in/Tech-ravi-sharma">
+                linkedin
+            </a>
+            <br><br>
+            <a class="link-dark link-offset-3-hover link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover" href="https://github.com/SharmaRavi025">
+                GitHub
+            </a>
+            <br><br>
+            <a class="link-dark link-offset-3 link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover" href="https://www.instagram.com/ravi626sharma/">
+                Instagram
+            </a>
+            <br><br>
+        </h6>
+        </div>
+    </div>
+</div>
+<br><br>
+{% endblock Connect %}
+
+

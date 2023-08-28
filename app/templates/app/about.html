@@ -1,0 +1,115 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/banner/Banner_1.jpg' %}" class="d-block w-100" alt="Banner Image" height="500" 
+                width="150">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/banner/Banner_3.jpg' %}" class="d-block w-100" alt="Banner Image" height="500" 
+                width="150">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/banner/Banner_4.jpg' %}" class="d-block w-100" alt="Banner Image" height="500" 
+                width="150">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+{% endblock banner-slider %}
+
+{% block main-content %}
+
+<br>
+<div class="accordion" id="accordionExample">
+    <div class="container mt-3">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h2>About Us</h2>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p class="fs-5"><strong>The Dabba Service is an online delivery site</strong>  
+          that offers healthy, homemade meals to students, office-goers, and busy individuals who are always on the go. The 
+          meals are prepared by talented and skilled home-based women who specialize in cooking healthy, tasty food. The Dabba 
+          Service ensures that the meals are delivered hot and fresh, and are free from any preservatives or additives. 
+          Customers can choose from a wide range of meal options, including vegetarian and non- vegetarian dishes, and can 
+          customize their orders according to their preferences. This service provides a convenient and affordable way to enjoy 
+          healthy, home-cooked meals without having to cook or clean up. With The Dabba Service, customers can rest assured 
+          that they are eating nutritious and delicious food that has been prepared with love and care.<br><br>
+          <bold>The Chef!</bold> Every Mother<br> We are proud to Our Women </p>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria- 
+        expanded="false" aria-controls="collapseTwo">
+          <h2>Mission</h2>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p class="fs-5"><strong>Self-Empowerment of Girls, Women, and Divorced Women:<br></strong> 
+          Self-empowerment is the process of gaining confidence, self-worth, and the ability to take control of one's life. 
+            Girls, women, and divorced women often face unique challenges when it comes to self-empowerment, but there are many 
+            steps they can take to become more self-empowered:<br>
+
+            Build a support network: Girls, women, and divorced women can benefit from building a network of supportive 
+            friends, family members, and professionals who can provide emotional support and guidance.<br>
+
+            Focus on personal growth: Investing time and effort in personal growth can help girls, women, and divorced women 
+            build their confidence, self-esteem, and resilience. This can include reading self-help books, attending therapy or 
+            coaching, and pursuing hobbies and interests that bring them joy.<br>
+
+            Set goals: Setting realistic goals and working towards them can help girls, women, and divorced women feel a sense 
+            of accomplishment and control over their lives.<br>
+
+            Practice self-care: Self-care is essential for maintaining physical, emotional, and mental health. Girls, women, 
+            and divorced women can practice self-care by eating healthy, getting enough sleep, exercising regularly, and taking 
+            time to relax and unwind.<br>
+
+            Speak up: Learning to assert themselves and communicate their needs and boundaries can help girls, women, and 
+            divorced women feel more empowered and in control of their lives.<br><br>
+
+            <strong>Dabba Service Serving Healthy Homemade Food for Students and Office Workers:<br></strong>
+
+            Dabba service is a food delivery service that provides healthy homemade food to students and office workers. This 
+            service is becoming increasingly popular as people become more health-conscious and busy schedules make it 
+            difficult to cook healthy meals at home. Here are some benefits of using a dabba service:<br>
+
+            Convenience: Dabba service delivers healthy homemade food right to your doorstep, saving you time and effort.<br>
+
+            Healthy food options: Dabba service offers a variety of healthy food options, including vegetarian, vegan, and 
+            gluten-free options.<br>
+
+            Cost-effective: Dabba service is an affordable option for students and office workers who want to eat healthy but 
+            don't have the time or resources to cook at home.<br>
+
+            Quality food: Dabba service uses fresh, locally sourced ingredients to ensure that the food is nutritious and 
+            flavorful.<br>
+
+            Sustainable: Dabba service uses eco-friendly packaging to reduce waste and promote sustainability.<br>
+
+            Overall, dabba service is a great option for students and office workers who want to eat healthy, homemade food 
+            without the hassle of cooking it themselves.<br></p>
+        </div>
+      </div>
+    </div>
+    
+<br><br>
+{% endblock main-content %}
